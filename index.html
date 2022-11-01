@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700;800&display=swap" >
+    <title>Addidas</title>
+</head>
+<body>
+    <!-- start header -->
+    <div class="header ">
+        <div class="saving-head d-flex bg-black text-light position-relative justify-content-center align-items-center pt-3 pb-3 fw-bold">
+            <div class="free d-flex align-items-center position-absolute opacity-0">
+                <p class=" me-3 d-flex align-items-center mb-0">FREE STANDARD SHIPPING & RETURNS</p>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="offer d-flex align-items-center position-absolute opacity-100 " >
+                <p class=" me-3 d-flex align-items-center mb-0">RACK UP THE SAVINGS: UP TO $60 OFF *</p>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+        </div>
+        <div class="main-head d-flex p-2 justify-content-between position-relative">
+            <div class="logo d-flex align-items-center justify-content-center">
+                <img class="img-fluid position-absolute bottom-0" src="https://www.adidas.com/glass/react/2714aaf/assets/img/icon-adidas-logo.svg" alt="">
+            </div>
+            <div class="icon-bar d-flex justify-content-center align-items-center position-absolute  mt-4 ms-4 fs-3 d-lg-none ">
+                <i class="fa-solid fa-bars me-4 cursor-pointer"></i>
+                <i class="fa-solid fa-location-dot cursor-pointer"></i>
+            </div>
+            <ul class="nav d-lg-flex list-unstyled align-items-center position-absolute">
+                <li class="men px-md-2 px-lg-3 fw-bold position-relative men" data-type="men">MEN</li>
+                <li class="px-md-2 px-lg-3 fw-bold position-relative" data-type="women">WOMEN</li>
+                <li class="px-md-2 px-lg-3 fw-bold position-relative" data-type="kids">KIDS</li>
+                <li class="px-md-2 px-lg-3 text-black-50 position-relative" data-type="gifts">GIFTS</li>
+                <li class="px-md-2 px-lg-3 text-black-50 position-relative"data-type="sale">SALE</li>
+                <li class="px-md-2 px-lg-3 text-black-50 position-relative" data-type="stripe">3 STRIPE LIFE</li>
+            </ul>
+            <div class="shopping pe-3 text-center d-md-flex flex-column justify-content-between">
+                <ul class="help d-lg-flex list-unstyled text-black-40 ">
+                    <li class="pt-1 pe-2 ps-2">help</li>
+                    <li class="pt-1 pe-2 ps-2">exchanges & returns</li>
+                    <li class="pt-1 pe-2 ps-2">order tracker</li>
+                    <li class="pt-1 pe-2 ps-2">join adiclub</li>
+                </ul>
+                <div class="search d-flex align-items-center justify-content-center">
+                    <input class=" d-md-flex" type="search" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                    <i class="fa-regular fa-user me-4 fs-5 cursor-pointer"></i>
+                    <i class="fa-regular fa-heart me-3 fs-5 cursor-pointer d-md-flex"></i>
+                    <i class="fa-solid fa-bag-shopping me-3 fs-5 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+        <!-- start mobile bar -->
+            <div class="primary-bar">
+                <div class="mobile-header position-absolute top-0 left-0 w-100 bg-light h-100">
+                    <div class="logo d-flex align-items-center justify-content-center p-2 position-relative">
+                        <img class="img-fluid" src="https://www.adidas.com/glass/react/2714aaf/assets/img/icon-adidas-logo.svg" alt="">
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="mobile-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">MEN</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">WOMEN</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer" >KIDS</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">GIFTS</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">SALE</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">3 STRIPE LIFE</li>
+                    </ul>
+                    <ul class="list-order list-unstyled px-4 py-4">
+                        <li class="mb-3 position-relative cursor-pointer">My Account</li>
+                        <li class="mb-3 position-relative cursor-pointer">Exchanges & Returns</li>
+                        <li class="mb-3 position-relative cursor-pointer">Order Tracker</li>
+                        <li class="mb-3 position-relative cursor-pointer">adiClub</li>
+                        <li class="mb-3 position-relative cursor-pointer">Gift Cards</li>
+                        <li class="mb-3 position-relative cursor-pointer">Store Locator</li>
+                        <li class="mb-3 position-relative cursor-pointer">Mobile Apps</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="secondary-bar"> 
+                <div class="men-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">MEN</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Shoes">Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Clothing">Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Accessories">Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-New & Trending">New & Trending</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Shop by Sport">Shop by Sport</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Shop by Collection">Shop by Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="MEN-Sale">Sale</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Buy More Save More</li>
+                    </ul>
+                </div>
+                <div class="women-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN">
+                        <div class="head pb-3">
+                            <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                            <h4 class="px-3 fw-bold fs-6">WOMEN</h4>
+                            <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <ul class="women-nav list-unstyled px-4 py-4">
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Shoes">Shoes</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Clothing">Clothing</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Accessories" >Accessories</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-New & Trending">New & Trending</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Shop by Sport">Shop by Sport</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Shop by Collection">Shop by Collection</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Sale">Sale</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="WOMEN-Buy More Save More">Buy More Save More</li>
+                        </ul>
+                </div>
+                <div class="kids-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS">
+                        <div class="head pb-3">
+                            <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                            <h4 class="px-3 fw-bold fs-6">KIDS</h4>
+                            <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <ul class="kids-nav list-unstyled px-4 py-4">
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Buy More Save More">Buy More Save More</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Boys">Boys</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Girls" >Girls</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Babies & Toddlers">Babies & Toddlers</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-New & Trending">New & Trending</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Accessories">Accessories</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Shop by Age">Shop by Age</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-Shop by sport">Shop by sport</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="KIDS-All Kids">All Kids</li>
+                        </ul>
+                </div>
+                <div class="gifts-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS">
+                        <div class="head pb-3">
+                            <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                            <h4 class="px-3 fw-bold fs-6">GIFTS</h4>
+                            <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <ul class="gifts-nav list-unstyled px-4 py-4">
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Men">Men</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Women">Women</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Kids">Kids</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Accessories">Accessories</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Gifts by price">Gifts by price</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="GIFTS-Gift Ideas">Gift Ideas</li>
+                        </ul>
+                </div>
+                <div class="sale-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="SALE">
+                        <div class="head pb-3">
+                            <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                            <h4 class="px-3 fw-bold fs-6">SALE</h4>
+                            <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <ul class="sale-nav list-unstyled px-4 py-4">
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Buy More Save More</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Mens Sale</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Womens Sale</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Kids Sale</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tee Bundle:2 for $39 or 3 for $49</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gift Ideas</li>
+                        </ul>
+                </div>
+                <div class="stripe-mobile-header fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE">
+                        <div class="head pb-3">
+                            <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                            <h4 class="px-3 fw-bold fs-6">3 STRIPE LIFE</h4>
+                            <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <ul class="stripe-nav list-unstyled px-4 py-4">
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer"data-type="3 STRIPE LIFE-What's New">What's New</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer"data-type="3 STRIPE LIFE-Collaborations">Collaborations</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="3 STRIPE LIFE-Our World">Our World</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="3 STRIPE LIFE-Sports">Sports</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="3 STRIPE LIFE-Originals">Originals</li>
+                            <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" data-type="3 STRIPE LIFE-Collections">Collections</li>
+                        </ul>
+                </div>
+                </div>
+            <div class="tertiary-bar">
+            <div class="men-shoes fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Shoes">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOES</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-shoes-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's SHoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sneakers </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sandals & Slides</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Outdoor &Hiking</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes $100 & Under </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                    </ul>
+            </div>
+            <div class="men-clothing fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Clothing">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Clothing</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-clothing-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shorts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Track Suits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Big & Tall</li>
+                    </ul>
+            </div>
+            <div class="men-accessories fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Accessories">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Accessories</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-accessories-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shorts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Track Suits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Big & Tall</li>
+                    </ul>
+            </div>
+            <div class="men-new fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-New & Trending">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">New & Trending</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-new-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's New Arrivals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's Best Sellers</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Members Exclusives</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fall Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Vintage '70s Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Pharell Premium Basics</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Breast Cancer Awareness Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Only at adidas</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Release Dates</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">End Plastic Waste</li>
+                    </ul>
+            </div>
+            <div class="men-shop-sport fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Shop by Sport">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY SPORT</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-shop-sport-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Cycling</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hiking & Outdoor</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hockey</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Swim</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tennis</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Yoga</li>
+                    </ul>
+            </div>
+            <div class="men-shop-collection fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Shop by Collection">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY COLLECTION</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-shop-collection-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adicolor Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adilette</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >FIFA WORLD CUP</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Five Ten</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Forum</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Ivy park</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Nizzza</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Originals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">OZ</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sportswear</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Terrex</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Ultraboost</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Y-3</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">YEEZY</li>
+                    </ul>
+            </div>
+            <div class="men-sale fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="MEN-Sale">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Sale</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="men-sale-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Clothing    </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Sale</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tee Bundle: 2 for $39 or 3 for $49</li>
+                    </ul>
+            </div>
+            <div class="women-shoes fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Shoes">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOES</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-shoes-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sneakers </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sandals & Slides</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Outdoor &Hiking</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes $100 & Under </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                    </ul>
+            </div>
+            <div class="women-clothing fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Clothing">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Clothing</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-clothing-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shorts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Track Suits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Big & Tall</li>
+                    </ul>
+            </div>
+            <div class="women-accessories fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Accessories">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Accessories</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-accessories-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shorts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Track Suits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Big & Tall</li>
+                    </ul>
+            </div>
+            <div class="women-new fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-New & Trending">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">New & Trending</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-new-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's New Arrivals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's Best Sellers</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Members Exclusives</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fall Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Vintage '70s Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Pharell Premium Basics</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Breast Cancer Awareness Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Only at adidas</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Release Dates</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jerseys</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">End Plastic Waste</li>
+                    </ul>
+            </div>
+            <div class="women-shop-sport fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Shop by Sport">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY SPORT</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-shop-sport-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Cycling</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hiking & Outdoor</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hockey</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Swim</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tennis</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Yoga</li>
+                    </ul>
+            </div>
+            <div class="women-shop-collection fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Shop by Collection">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY COLLECTION</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-shop-collection-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adicolor Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adilette</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >FIFA WORLD CUP</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Five Ten</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Forum</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Ivy park</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Nizzza</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Originals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">OZ</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sportswear</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Terrex</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Ultraboost</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Y-3</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">YEEZY</li>
+                    </ul>
+            </div>
+            <div class="women-sale fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="WOMEN-Sale">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Sale</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="women-sale-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Clothing    </li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Sale</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tee Bundle: 2 for $39 or 3 for $49</li>
+                    </ul>
+            </div>
+            <div class="kids-boys fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-Boys">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Clothing</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-boys-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sale</li>
+                    </ul>
+            </div>
+            <div class="kids-girls fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-Girls">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Accessories</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-girls-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sale</li>
+                    </ul>
+            </div>
+            <div class="kids-new fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-New & Trending">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">New & Trending</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-new-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer"> New Arrivals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Best Sellers</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Only at adidas</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Disney Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">LEGO Collection</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fall Collection</li>
+                    </ul>
+            </div>
+            <div class="kids-accessories fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-Accessories">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Accessories</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-accessories-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Accessories</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Bags & Backpacks</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Hats & Beanis</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Socks</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Backpacks Under $50</li>
+                    </ul>
+            </div>
+            <div class="kids-shop-age fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-Shop by Age">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY Age</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-shop-age-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Youth & Teens[8-16 years]</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Children[4-8 years]</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Babies & Toddlers (0-4 years)</li>
+                    </ul>
+            </div>
+            <div class="kids-shop-sport fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="KIDS-Shop by Sport">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SHOP BY SPORT</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="kids-shop-sport-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Cycling</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hiking & Outdoor</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hockey</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Swim</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tennis</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Yoga</li>
+                    </ul>
+            </div>
+            <div class="gifts-men fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Men">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">MEN</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-men-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Men's Gifts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes $100 & Under</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Tracksuits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Clothing</li>
+                    </ul>
+            </div>
+            <div class="gifts-women fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Women">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">WOMEN</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-women-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Women's Gifts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes $100 & Under</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">T-shirts & Tops</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Tracksuits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Clothing</li>
+                    </ul>
+            </div>
+            <div class="gifts-kids fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Kids">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">KIDS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-kids-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Kid's Gifts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Shoes $80 & Under</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hoodies & Sweatshirts</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Pants</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sneakers</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Fleeces</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Jackets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Tracksuits</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Matching Sets</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">All Clothing</li>
+                    </ul>
+            </div>
+            <div class="gifts-accessories fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Accessories">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">Accessories</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-accessories-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Bags & Backpacks</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gloves</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hats</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Socks</li>
+                    </ul>
+            </div>
+            <div class="gifts-price fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Gifts by price">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">GIFTS BY PRICE</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-price-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $25</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $50</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $75</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Gifts Under $100</li>
+                    </ul>
+            </div>
+            <div class="gifts-ideas fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="GIFTS-Gift Ideas">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">GIFTS IDEAS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="gifts-ideas-nav  list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $25</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $50</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gifts Under $75</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Gifts Under $100</li>
+                    </ul>
+            </div>
+            <div class="stripe-new fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-What's New">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">What'S NEW</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-new-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Impossible is Nothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">New Arrivals</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Best Sellers</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Release Dates</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Stories</li>
+                    </ul>
+            </div>
+            <div class="stripe-collaborations fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-Collaborations">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">COLLABORATIONS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-collaborations-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">IVY PARK</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Pharrell</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Karlie Kloss</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Prada</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Craig Green</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Bad Bunny</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Human Made</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">YEEZY</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Y-3</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Stella McCartney</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Consortium</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >collaborations</li>
+                    </ul>
+            </div>
+            <div class="stripe-world fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-Our World">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">OUR WORLD</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-world-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Sustainability</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Futurecraft</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adidas Legacy</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adiClub</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Made To Be Remade</li>
+                    </ul>
+            </div>
+            <div class="stripe-sports fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-Sports">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">SPORTS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-sports-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Baseball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Basketball</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Cycling</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Football</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Golf</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hiking & Outdoor</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Hockey</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer" >Running</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Soccer</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Swim</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Tennis</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Workout & Gym</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Yoga</li>
+                    </ul>
+            </div>
+            <div class="stripe-originals fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-Originals">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">ORIGINALS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-originals-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Superstar</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adilette</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Cycling</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">ZX</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">adicolor Clothing</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">NMD</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Stan Smith</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Samba</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Gazelle</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Oz</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Forum</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Originals Shoes</li>
+                        <li class="mb-3 fw-bold text-black-50 position-relative cursor-pointer">Originals Clothing</li>
+                    </ul>
+            </div>
+            <div class="stripe-collections fw-bold px-4 py-4 position-absolute top-0 left-0 w-100 bg-light h-100" data-type="3 STRIPE LIFE-Collections">
+                    <div class="head pb-3">
+                        <span class="back"><i class="fa-solid fa-chevron-left "></i></span>                
+                        <h4 class="px-3 fw-bold fs-6">COLLECTIONS</h4>
+                        <span class="close py-1 px-3 position-absolute top-0 d-block cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <ul class="stripe-collections-nav list-unstyled px-4 py-4">
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Adizero</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Copa</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">4D</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Five Ten</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Predator</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Supernova</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">TERREX</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Tiro</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Ultraboost</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">X</li>
+                        <li class="mb-3 fw-bold position-relative cursor-pointer">Slides</li>
+                    </ul>
+                </div>
+        </div>
+        <!-- End Mobile bar -->
+    </div>
+    <!-- End header -->
+    <!-- start mega menu -->
+    <div class="mega-menu mega-menu-men text-dark position-absolute" data-type="men">
+        <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">NEW & TRENDING</a></li>
+                            <li class="px-3"><a class="tex" href="#">New Arrivals</a></li>
+                            <li class="px-3"><a href="#">Best Sellers</a></li>
+                            <li class="px-3"><a href="#">Only at adidas</a></li>
+                            <li class="px-3"><a href="#">Members Exclusives</a></li>
+                            <li class="px-3"><a href="#">Release Dates</a></li>
+                            <li class="px-3"><a href="#">Fall Collection</a></li>
+                            <li class="px-3"><a href="#">Vintage '70s Collection</a></li>
+                            <li class="px-3"><a href="#">Pharrell Premim Basics</a></li>
+                            <li class="px-3"><a href="#">Tee Bundle:2 for $39 or 3 for $49</a></li>
+                            <li class="px-3"><a href="#">Breat Cancer Awareness Collection</a></li>
+                            <li class="px-3"><a href="#"><img class="img-fluid w-50 mt-3 me-auto ms-auto d-block" src="imgs/FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629.webp" alt=""></a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0 " ><a href="#">Sale</a></li>
+                        </ul>
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">SHOES</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Sandals & Slides</a></li>
+                            <li class="px-3"><a href="#">Outdoor & Hiking</a></li>
+                            <li class="px-3"><a href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="p-3  position-absolute bottom-0 fw-bold"><a href="#">All Men's Shoes</a></li>
+        
+                        </ul>
+                        <ul class="clothing list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">CLOTHING</a></li>
+                            <li class="px-3"><a href="#">Hodies & Sweatshirts</a></li>
+                            <li class="px-3"><a href="#">Pants</a></li>
+                            <li class="px-3"><a href="#">T-shirts & Tops</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Jackets</a></li>
+                            <li class="px-3"><a href="#">Shorts</a></li>
+                            <li class="px-3"><a href="#">Tracksuits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">Jerseys</a></li>
+                            <li class="px-3"><a href="#">Big & Tall</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's Clothing</a></li>
+        
+                        </ul>
+                        <ul class="accessories list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">ACCESSORIES</a></li>
+                            <li class="px-3"><a href="#">Bags & Backpacks</a></li>
+                            <li class="px-3"><a href="#">Balls</a></li>
+                            <li class="px-3"><a href="#">Gloves</a></li>
+                            <li class="px-3"><a href="#">Hats & Beanies</a></li>
+                            <li class="px-3"><a href="#">Headphones</a></li>
+                            <li class="px-3"><a href="#">Socks</a></li>
+                            <li class="px-3"><a href="#">Underwear</a></li>
+                            <li class="px-3"><a href="#">Water Bottles</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's Accessories</a></li>
+                        </ul>
+                        <ul class="sport list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">SHOP BY SPORT</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Cycling</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Hiking & Outdoor</a></li>
+                            <li class="px-3"><a href="#">Hoockey</a></li>    
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Swim</a></li>
+                            <li class="px-3"><a href="#">Tennis</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Yoga</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's Sport</a></li>
+        
+                        </ul>
+                        <ul class="collection list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">SHOP BY COLLECTION</a></li>
+                            <li class="px-3"><a href="#">adicolor Clothing</a></li>
+                            <li class="px-3"><a href="#">adilette</a></li>
+                            <li class="px-3"><a href="#">FIFA WORLD CUP</a></li>
+                            <li class="px-3"><a href="#">Five Ten</a></li>
+                            <li class="px-3"><a href="#">Forum</a></li>
+                            <li class="px-3"><a href="#">IVY PORK</a></li>
+                            <li class="px-3"><a href="#">Nizza</a></li>
+                            <li class="px-3"><a href="#">Originals</a></li>
+                            <li class="px-3"><a href="#">OZ</a></li>
+                            <li class="px-3"><a href="#">Sportswear</a></li>
+                            <li class="px-3"><a href="#">TERREX</a></li>
+                            <li class="px-3"><a href="#">Ultraboost</a></li>
+                            <li class="px-3"><a href="#">Y-3</a></li>
+                            <li class="px-3"><a href="#">YEEZY</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's</a></li>
+                        </ul>        
+        </div>
+    </div>
+    <div class="mega-menu mega-menu-women text-dark position-absolute" data-type="women">
+                    <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">NEW & TRENDING</a></li>
+                            <li class="px-3"><a class="tex" href="#">New Arrivals</a></li>
+                            <li class="px-3"><a href="#">Best Sellers</a></li>
+                            <li class="px-3"><a href="#">Only at adidas</a></li>
+                            <li class="px-3"><a href="#">Members Exclusives</a></li>
+                            <li class="px-3"><a href="#">Release Dates</a></li>
+                            <li class="px-3"><a href="#">Fall Collection</a></li>
+                            <li class="px-3"><a href="#">Vintage '70s Collection</a></li>
+                            <li class="px-3"><a href="#">Pharrell Premim Basics</a></li>
+                            <li class="px-3"><a href="#">Tee Bundle:2 for $39 or 3 for $49</a></li>
+                            <li class="px-3"><a href="#">Breat Cancer Awareness Collection</a></li>
+                            <li class="px-3"><a href="#"><img class="img-fluid w-50 mt-3 me-auto ms-auto d-block" src="imgs/FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629.webp" alt=""></a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0 " ><a href="#">Sale</a></li>
+                        </ul>
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">SHOES</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Sandals & Slides</a></li>
+                            <li class="px-3"><a href="#">Outdoor & Hiking</a></li>
+                            <li class="px-3"><a href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">volleyball</a></li>
+                            <li class="p-3  position-absolute bottom-0 fw-bold"><a href="#">All Women's Shoes</a></li>
+        
+                        </ul>
+                        <ul class="clothing list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">CLOTHING</a></li>
+                            <li class="px-3"><a href="#">Hodies & Sweatshirts</a></li>
+                            <li class="px-3"><a href="#">Pants</a></li>
+                            <li class="px-3"><a href="#">T-shirts & Tops</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Jackets</a></li>
+                            <li class="px-3"><a href="#">Shorts</a></li>
+                            <li class="px-3"><a href="#">Tracksuits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">Plus sizes</a></li>
+                            <li class="px-3"><a href="#">Jerseys</a></li>
+                            <li class="px-3"><a href="#">Big & Tall</a></li>
+                            <li class="px-3"><a href="#">Dresses & skirts</a></li>
+                            <li class="px-3"><a href="#">Maternity</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Women's Clothing</a></li>
+        
+                        </ul>
+                        <ul class="accessories list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">ACCESSORIES</a></li>
+                            <li class="px-3"><a href="#">Bags & Backpacks</a></li>
+                            <li class="px-3"><a href="#">Balls</a></li>
+                            <li class="px-3"><a href="#">Gloves</a></li>
+                            <li class="px-3"><a href="#">Hats & Beanies</a></li>
+                            <li class="px-3"><a href="#">Headphones</a></li>
+                            <li class="px-3"><a href="#">Socks</a></li>
+                            <li class="px-3"><a href="#">Underwear</a></li>
+                            <li class="px-3"><a href="#">Water Bottles</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Women's Accessories</a></li>
+                        </ul>
+                        <ul class="sport list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">SHOP BY SPORT</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Cycling</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Hiking & Outdoor</a></li>
+                            <li class="px-3"><a href="#">Hoockey</a></li>    
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Swim</a></li>
+                            <li class="px-3"><a href="#">Tennis</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Yoga</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Women's Sport</a></li>
+        
+                        </ul>
+                        <ul class="collection list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">SHOP BY COLLECTION</a></li>
+                            <li class="px-3"><a href="#">adicolor Clothing</a></li>
+                            <li class="px-3"><a href="#">adilette</a></li>
+                            <li class="px-3"><a href="#">FIFA WORLD CUP</a></li>
+                            <li class="px-3"><a href="#">Five Ten</a></li>
+                            <li class="px-3"><a href="#">Forum</a></li>
+                            <li class="px-3"><a href="#">IVY PORK</a></li>
+                            <li class="px-3"><a href="#">Nizza</a></li>
+                            <li class="px-3"><a href="#">Originals</a></li>
+                            <li class="px-3"><a href="#">OZ</a></li>
+                            <li class="px-3"><a href="#">Sportswear</a></li>
+                            <li class="px-3"><a href="#">TERREX</a></li>
+                            <li class="px-3"><a href="#">Ultraboost</a></li>
+                            <li class="px-3"><a href="#">Y-3</a></li>
+                            <li class="px-3"><a href="#">YEEZY</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Women's</a></li>
+                        </ul>        
+                    </div>
+    </div>
+    <div class="mega-menu mega-menu-kids text-dark position-absolute" data-type="kids">
+                    <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">NEW & TRENDING</a></li>
+                            <li class="px-3"><a class="tex" href="#">New Arrivals</a></li>
+                            <li class="px-3"><a href="#">Best Sellers</a></li>
+                            <li class="px-3"><a href="#">Only at adidas</a></li>
+                            <li class="px-3"><a href="#">Fall Collection</a></li>
+                            <li class="px-3"><a href="#">Fall Collection</a></li>
+                            <li class="px-3"><a href="#">LEGO collection</a></li>
+                            <li class="px-3"><a href="#">Tee Bundle:2 for $30</a></li>
+                            <li class="px-3"><a href="#"><img class="img-fluid w-50 mt-3 me-auto ms-auto d-block" src="imgs/FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629.webp" alt=""></a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0 " ><a href="#">Sale</a></li>
+                        </ul>
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">BOYS SHOES</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>    
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Sandals & Slides</a></li>
+                            <li class="px-3"><a href="#">Outdoor & Hiking</a></li>
+                            <li class="px-3"><a href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="fs-6 px-3 py-1 fw-bold"> <a href="#">BOYS Clothing SHOES</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Track  suits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">Underwear</a></li>
+                            <li class="p-3  position-absolute bottom-0 fw-bold"><a href="#">All kids Shoes</a></li>
+        
+                        </ul>
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">GIRLS SHOES</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Sandals & Slides</a></li>
+                            <li class="px-3"><a href="#">Outdoor & Hiking</a></li>
+                            <li class="px-3"><a href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="fs-6 px-3 py-1 fw-bold"> <a href="#">GIRLS Clothing </a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Track  suits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">Underwear</a></li>
+                            <li class="p-3  position-absolute bottom-0 fw-bold"><a href="#">All kids Clothing</a></li>
+        
+                        </ul>
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">BABIES & TODLERS</a></li>
+                            <li class="px-3"><a href="#">Baby Girl</a></li>
+                            <li class="px-3"><a href="#">Baby Boy</a></li>
+                            <li class="px-3"><a href="#">All Shoes(1k-10k)</a></li>
+                            <li class="px-3"><a href="#">All Clothing(0-3T)</a></li>
+                            <li class="fs-6 px-3 py-1 fw-bold"> <a href="#">SHOP BY AGE </a></li>
+                            <li class="px-3"><a href="#">Youth & Teens [8-16years]</a></li>
+                            <li class="px-3"><a href="#">Children[4-8years]</a></li>
+                            <li class="px-3"><a href="#">Babies[0-4years]</a></li>
+                            <li class="p-3  position-absolute bottom-0 fw-bold"><a href="#">All kids Accessories</a></li>
+        
+                        </ul>
+                        <ul class="collection list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">ACCESSORIES</a></li>
+                            <li class="px-3"><a href="#">Backpacks & Bags</a></li>
+                            <li class="px-3"><a href="#">Hats</a></li>
+                            <li class="px-3"><a href="#">Socks</a></li>
+                            <li class="px-3"><a href="#">Backpacks Under $50</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All kids sport</a></li>
+                        </ul> 
+                        <ul class="sport list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">SHOP BY SPORT</a></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Cycling</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Hiking & Outdoor</a></li>
+                            <li class="px-3"><a href="#">Hoockey</a></li>    
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Swim</a></li>
+                            <li class="px-3"><a href="#">Tennis</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Yoga</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's Sport</a></li>
+        
+                        </ul>
+               
+                    </div>
+    </div>
+    <div class="mega-menu mega-menu-gifts text-dark" data-type="gifts">
+                    <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">MEN</a></li>
+                            <li class="px-3"><a class="tex" href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li class="px-3"><a href="#">Pants</a></li>
+                            <li class="px-3"><a href="#">Jackets</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Tracksuits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">All Shoes</a></li>
+                            <li class="px-3"><a href="#">All Clotheing</a></li>
+                            <li class="px-3"><a href="#">All Mens Gifts</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WOMEN</a></li>
+                            <li class="px-3"><a class="tex" href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li class="px-3"><a href="#">Pants</a></li>
+                            <li class="px-3"><a href="#">Jackets</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Tracksuits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">All Shoes</a></li>
+                            <li class="px-3"><a href="#">All Clotheing</a></li>
+                            <li class="px-3"><a href="#">All Mens Gifts</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">KIDS</a></li>
+                            <li class="px-3"><a class="tex" href="#">Shoes $100 & Under</a></li>
+                            <li class="px-3"><a href="#">Sneakers</a></li>
+                            <li class="px-3"><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li class="px-3"><a href="#">Pants</a></li>
+                            <li class="px-3"><a href="#">Jackets</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Tracksuits</a></li>
+                            <li class="px-3"><a href="#">Matching Sets</a></li>
+                            <li class="px-3"><a href="#">All Shoes</a></li>
+                            <li class="px-3"><a href="#">All Clotheing</a></li>
+                            <li class="px-3"><a href="#">All Mens Gifts</a></li>
+                        </ul>
+                        <ul class="collection list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">ACCESSORIES</a></li>
+                            <li class="px-3"><a href="#">Backpacks & Bags</a></li>
+                            <li class="px-3"><a href="#">Hats</a></li>
+                            <li class="px-3"><a href="#">Socks</a></li>
+                            <li class="px-3"><a href="#">Gloves</a></li>
+                        </ul> 
+                        <ul class="shoes list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"> <a href="#">GIFTS BY PRICE</a></li>
+                            <li class="px-3"><a href="#">Gifts Under $25</a></li>
+                            <li class="px-3"><a href="#">Gifts Under $50</a></li>
+                            <li class="px-3"><a href="#">Gifts Under $75</a></li>
+                            <li class="px-3"><a href="#">Gifts Under $100</a></li>
+                        </ul>
+        
+                        <ul class="sport list-unstyled col-2">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">GIFTS IDEAS</a></li>
+                            <li class="px-3"><a href="#">Stocking Stuffers</a></li>
+                            <li class="px-3"><a href="#">Fleece</a></li>
+                            <li class="px-3"><a href="#">Matching Outfits for the Family</a></li>
+                            <li class="px-3"><a href="#">FIFA WORLD</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Hiking & Outdoor</a></li>
+                            <li class="px-3"><a href="#">Hoockey</a></li>    
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Swim</a></li>
+                            <li class="px-3"><a href="#">Tennis</a></li>
+                            <li class="px-3"><a href="#">Workout & Gym</a></li>
+                            <li class="px-3"><a href="#">Yoga</a></li>
+        
+                        </ul>
+               
+                    </div>
+    </div>
+    <div class=" mega-menu mega-menu-sale text-dark " data-type="sale">
+                    <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-3 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">FEATURED SALE</a></li>
+                            <li class="px-3"><a class="tex" href="#">Tee Bundle:2 for $39 or 3 for $49</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">Sale</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-3 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">MEN</a></li>
+                            <li class="px-3"><a class="tex" href="#">Shoes </a></li>
+                            <li class="px-3"><a href="#">Clothing</a></li>
+                            <li class="px-3"><a href="#">Accessories</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Men's Sale</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-3 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WOMEN</a></li>
+                            <li class="px-3"><a class="tex" href="#">Shoes </a></li>
+                            <li class="px-3"><a href="#">Clothing</a></li>
+                            <li class="px-3"><a href="#">Accessories</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Women's Sale</a></li>
+                        </ul>
+                        <ul class="collection list-unstyled col-3">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">KIDS</a></li>
+                            <li class="px-3"><a href="#">Boys Sale</a></li>
+                            <li class="px-3"><a href="#">Girls Sale</a></li>
+                            <li class="px-3"><a href="#">Socks</a></li>
+                            <li class="p-3 fw-bold position-absolute bottom-0"><a href="#">All Kids Sale</a></li>
+                        </ul> 
+                        
+                    </div>
+    </div>
+    <div class="mega-menu mega-menu-stripe text-dark " data-type="stripe">
+                    <div class="menu d-flex flex-nowrap flex-row pt-5 ">
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WHAT'S NEW?</a></li>
+                            <li class="px-3"><img class="img-fluid" src="imgs/holiday-fw21-header-nav-d_tcm221-814007.jfif" alt=""></li>
+                            <li class="px-3"><a href="#">Impossible Is Nothing</a></li>
+                            <li class="px-3"><a href="#">New Arrivals</a></li>
+                            <li class="px-3"><a href="#">Best Sellers</a></li>
+                            <li class="px-3"><a href="#">Release Dates</a></li>
+                            <li class="px-3"><a href="#">Stories</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">COLLABORATIONS</a></li>
+                            <li class="px-3"><img class="img-fluid" src="imgs/y-3-fw22-chapter3-brandcard-172x80_tcm221-941664.webp" alt=""></li>
+                            <li class="px-3"><a href="#">IVY PARK</a></li>
+                            <li class="px-3"><a href="#">Pharrell</a></li>
+                            <li class="px-3"><a href="#">Karlie kloss</a></li>
+                            <li class="px-3"><a href="#">Prada</a></li>
+                            <li class="px-3"><a href="#">Craig Green</a></li>
+                            <li class="px-3"><a href="#">Bad Bunny </a></li>
+                            <li class="px-3"><a href="#">Human Made</a></li>
+                            <li class="px-3"><a href="#">YEEZY</a></li>
+                            <li class="px-3"><a href="#">Y-3</a></li>
+                            <li class="px-3"><a href="#">Stella McCartney</a></li>
+                            <li class="px-3"><a href="#">Collaborations</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WHAT'S NEW?</a></li>
+                            <li class="px-3"><img class="img-fluid" src="imgs/ourworld-nav-d-small_tcm221-705659.jpeg" alt=""></li>
+                            <li class="px-3"><a href="#">Sustainability</a></li>
+                            <li class="px-3"><a href="#">Futurecraft</a></li>
+                            <li class="px-3"><a href="#">adidas Legacy</a></li>
+                            <li class="px-3"><a href="#">adiClub</a></li>
+                            <li class="px-3"><a href="#">Made To Be Remade</a></li> 
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WHAT'S NEW?</a></li>
+                            <li class="px-3"><img class="img-fluid" src="imgs/sport-nav-d-small_tcm221-705658.webp" alt=""></li>
+                            <li class="px-3"><a href="#">Baseball</a></li>
+                            <li class="px-3"><a href="#">Basketball</a></li>
+                            <li class="px-3"><a href="#">Football</a></li>
+                            <li class="px-3"><a href="#">Golf</a></li>
+                            <li class="px-3"><a href="#">Hockey</a></li>
+                            <li class="px-3"><a href="#">Outdoor</a></li>
+                            <li class="px-3"><a href="#">Running</a></li>
+                            <li class="px-3"><a href="#">Soccer</a></li>
+                            <li class="px-3"><a href="#">Skateboarding</a></li>
+                            <li class="px-3"><a href="#">Running Boarding</a></li>
+                            <li class="px-3"><a href="#">Tennis</a></li>
+                            <li class="px-3"><a href="#">Workout</a></li>
+                            <li class="px-3"><a href="#">Volleyball</a></li>
+                            <li class="px-3"><a href="#">Weghitlifting</a></li>
+                            <li class="px-3"><a href="#">Yoga</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WHAT'S NEW?</a></li>
+                            <li class="px-3"><img class="img-fluid" src="imgs/originals-ss21-stansmith-drop2-launch-sustain-hp-nav-1_tcm221-705657.webp" alt=""></li>
+                            <li class="px-3"><a href="#">Superstar</a></li>
+                            <li class="px-3"><a href="#">adilette</a></li>
+                            <li class="px-3"><a href="#">ZX</a></li>
+                            <li class="px-3"><a href="#">adicolor Clothing</a></li>
+                            <li class="px-3"><a href="#">NMD</a></li>
+                            <li class="px-3"><a href="#">Stab Smith</a></li>
+                            <li class="px-3"><a href="#">Samba</a></li>
+                            <li class="px-3"><a href="#">Gazelle</a></li>
+                            <li class="px-3"><a href="#">Oz</a></li>
+                            <li class="px-3"><a href="#">Forum</a></li>
+                            <li class="px-3"><a href="#">Originals Shoes</a></li>
+                            <li class="px-3"><a href="#">Originals Clothing</a></li>
+                        </ul>
+                        <ul class="trending list-unstyled col-2 text-decoration-none FW22-Rack-up-the-savings-promo_Onsite-1stday-topnav_tcm221-952629">
+                            <li class="fs-6 px-3 py-3 fw-bold"><a href="#">WHAT'S NEW?</a></li>
+                            <li class="px-3"><img class="img-fluid"  src="imgs/holiday-fw21-header-nav-d_tcm221-814007.jfif" alt=""></li>
+                            <li class="px-3"><a href="#">Impossible Is Nothing</a></li>
+                            <li class="px-3"><a href="#">New Arrivals</a></li>
+                            <li class="px-3"><a href="#">Best Sellers</a></li>
+                            <li class="px-3"><a href="#">Release Dates</a></li>
+                            <li class="px-3"><a href="#">Stories</a></li>
+                        </ul>
+                    </div>
+    </div>
+<!-- End Mega menu -->
+    <!-- start landing-page -->
+    <div class="landing-page d-flex flex-column justify-content-center ">
+        <div class="cont ps-6 position-absolute">
+            <h1 class="text-light fw-bold">THESE STRIPES ARE FOREVER</h1>
+            <p class="text-light">Heritage styles reinvented for now. A whole new take on adicolor.</p>
+            <div class="px-2 py-3 bg-light mb-3 width-fit-content fw-bold"><span class="me-3">SHOP COLLECTION</span><i class="fa-solid fa-arrow-right-long"></i></div>
+            <div class="px-2 py-3 bg-light mb-3 fw-bold"><span class="me-3">SHOP MEN</span><i class="fa-solid fa-arrow-right-long"></i></div>
+            <div class="px-2 py-3 bg-light mb-3 fw-bold"><span class="me-3">SHOP WOMEN</span><i class="fa-solid fa-arrow-right-long"></i></div>
+        </div>
+    </div>
+    <!-- End landing-page -->
+    <!-- start interested -->
+    <div class="interested position-relative">
+        <div class="text-cont">
+            <h2 class="fst-italic">STILL INTERESTED?</h2>
+            <ul class="d-flex list-unstyled ">
+                <li class="mx-3"><a href="#" class="text-black">MEXICO 22 AWAY JERSEY</a></li>
+                <li class="mx-3"><a href="#" class="text-black">MEXICO 22 AWAY JERSEY MEN</a></li>
+                <li class="mx-3"><a href="#" class="text-black">MEXICO 22 AWAY AUTHENTIC JERSEY</a></li>
+            </ul>       
+        </div>
+        <div class="controls position-absolute d-md-block">
+            <span class=" left p-3"><i class="fa-solid fa-chevron-left"></i></span>
+            <span class=" right p-3"><i class="fa-solid fa-chevron-right"></i></span>  
+        </div>   
+    </div>
+    <!-- End interested -->
+    <!-- start products -->
+    <div class="products">
+
+        <div class="products-slider d-flex position-relative">
+                <div class="product-card m-3 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/1.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritaged Now Striped Track Pants</p>
+                        <span class="text-black-50">Originals</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative" data-num="90$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/2.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative" data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/3.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/4.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/5.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/6.webp" alt="">    
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/7.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/8.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/9.webp" alt="">    
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/10.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/11.webp" alt="">
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="product-card m-3 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/12.webp" alt="">    
+                    </div>
+                    <div class="product-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+              
+        </div>   
+    </div>
+    <!-- End products -->
+    <!-- start reels -->
+    <div class="reels position-relative">
+        <div class="reel-box position-relative">
+            <div class="img w-70 "><img class="img-fluid m-auto d-block" src="imgs/slibber.webp" alt=""></div>
+            <a class="text-black d-block mx-auto fw-bold text-center my-3" href="#">SHOES</a>
+        </div>
+        <div class="reel-box position-relative">
+            <div class="img w-70"><img class="img-fluid m-auto d-block" src="imgs/bantlon.webp" alt=""></div>
+            <a class="text-black d-block mx-auto  fw-bold text-center my-3" href="#">CLOTHING</a>
+        </div>
+        <div class="reel-box position-relative">
+            <div class="img w-70"><img class="img-fluid m-auto d-block" src="imgs/socks.webp" alt=""></div>
+            <a class="text-black d-block mx-auto fw-bold text-center  my-3" href="#">BEST SELLERS</a>
+        </div>
+        <div class="reel-box position-relative ">
+            <div class="img w-70"><img class="img-fluid m-auto d-block" src="imgs/sweatshirt.webp" alt=""></div>
+            <a class="text-black d-block mx-auto  fw-bold text-center my-3" href="#">NEW ARRIVALS</a>
+        </div>
+      
+    </div>
+    
+    <!-- End reels -->
+    <!-- start list -->
+    <div class="prodlist d-flex justify-content-between p-3 m-3">
+        <ul class="list-unstyled d-flex align-items-center">
+            <li class="mx-2 d-flex align-items-center active position-relative cursor-pointer">NEW ARRIVALS</aclas></li>
+            <li class="mx-2 d-flex align-items-center position-relative cursor-pointer">WHAT'S TRENDING</li>
+            <li class="mx-2 d-flex align-items-center position-relative cursor-pointer">MEMBER EXCLUSIVES</li>
+
+        </ul>
+        <div><a class="text-black" href="">VIEW ALL</a></div>
+    </div>
+    <!-- End list -->
+    <!-- start store -->
+    <div class="store storeOne active" data-type="NEW ARRIVALS">
+        <div class="store-slider d-flex position-relative mt">
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/1.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritaged Now Striped Track Pants</p>
+                        <span class="text-black-50">Originals</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="90$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/2.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/3.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/4.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/5.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/6.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/7.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/8.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/9.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/10.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/11.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/new arrivals/12.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                
+        </div>
+        <ul class="position-absolute bulletsStore list-unstyled d-flex mt-4">
+
+        </ul>
+        <div class="right bg-light position-absolute" ><i class="fa-solid fa-arrow-right-long"></i></div>
+        <div class="left bg-light position-absolute"><i class="fa-solid fa-arrow-left-long"></i></div>           
+    </div>
+    <div class="store storeTwo" data-type="WHAT'S TRENDING">
+        <div class="store-slider d-flex position-relative mt">
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/1.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritaged Now Striped Track Pants</p>
+                        <span class="text-black-50">Originals</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="90$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/2.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/3.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/4.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/5.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/6.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/7.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/8.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/9.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/10.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/11.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/12.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/13.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+        </div>
+        <ul class="position-absolute bulletsStore list-unstyled d-flex mt-4">
+        </ul>
+        <div class="right bg-light position-absolute" ><i class="fa-solid fa-arrow-right-long"></i></div>
+        <div class="left bg-light position-absolute"><i class="fa-solid fa-arrow-left-long"></i></div>           
+    </div>
+    <div class="store storeThree" data-type="MEMBER EXCLUSIVES">
+        <div class="store-slider d-flex position-relative mt">
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/1.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritaged Now Striped Track Pants</p>
+                        <span class="text-black-50">Originals</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="90$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/2.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/3.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/4.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/5.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/6.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/7.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/8.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/9.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="220$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/10.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Marvel Black Panther Ultra 4F Shoes</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative" data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/11.webp" alt="">
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/member exclusive/12.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+                <div class="store-card m-1 position-relative " data-num="80$">
+                    <div class="img w-100">
+                        <img class="w-100" src="imgs/whats trending/13.webp" alt="">    
+                    </div>
+                    <div class="store-desc my-1 p-2">
+                        <p>Adicolor Heritage Now Striped Track Pants</p>
+                        <span class="text-black-50">Performance</span>
+                    </div>
+                </div>
+        </div>
+        <ul class="position-absolute bulletsStore list-unstyled d-flex mt-4">
+        </ul>
+        <div class="right bg-light position-absolute" ><i class="fa-solid fa-arrow-right-long"></i></div>
+        <div class="left bg-light position-absolute"><i class="fa-solid fa-arrow-left-long"></i></div>           
+    </div>     
+    <!-- End store -->
+    <!-- start time to go -->
+    <div class="time">
+        <div class="cont-time row position-relative flex-nowrap">
+            <div class="box col-3 ">
+                <div class="img w-100 ">
+                    <img class="w-100" src="imgs/fw22-holiday-october-tracksuits-womens-tcc_tcm221-952597.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">TIME TO GET GIVING</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black"  href="">SHOP NOW</a></span>
+            </div>
+            <div class="box  col-3">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/running-4dfwd-evergreen-fw22-digital-hp-teaser-carousel-02-d_tcm221-942754.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black"  href="">SHOP NOW</a></span>
+            </div>
+            <div class="box  col-3">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/collection-FW22-Thebe_Magugu-2-global-educate-hp-teaser-carousel_tcm221-928237.webp" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a  class="text-black" href="">SHOP NOW</a></span>
+            </div>
+            <div class="box col-3 ">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/og073-fw22-og-wc-collection-teaser-card-mw_tcm221-953508.webp" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black" href="">SHOP NOW</a></span>
+            </div>
+        </div>    
+    </div>
+    <!-- End time to go -->
+    <!-- start boost -->
+    <div class="boost mt-5 pt-5 pb-5">
+        <div class="cont-boost row position-relative flex-wrap justify-content-center">
+            <div class="box col-3  mt-4">
+                <div class="img w-100 ">
+                    <img class="w-100" src="imgs/boost/1.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">TIME TO GET GIVIG</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black"  href="">LEARN MORE</a></span>
+            </div>
+            <div class="box  col-3 mt-4">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/boost/2.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black"  href="">LEARN MORE</a></span>
+            </div>
+            <div class="box  col-3 mt-4">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/boost/3.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a  class="text-black" href="">LEARN MORE</a></span>
+            </div>
+            <div class="box col-3  mt-4">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/boost/4.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black" href="">LEARN MORE</a></span>
+            </div>
+            <div class="box  col-3  mt-4">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/boost/6.webp" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a  class="text-black" href="">LEARN MORE</a></span>
+            </div>
+            <div class="box col-3  mt-4">
+                <div class="img w-100">
+                    <img class="w-100" src="imgs/boost/7.jpg" alt="">
+                </div>
+                <div class="text p-2">
+                    <h3 class="fs-6 fw-bold">REDEFINING FORWARD MOTION. FOREVER.</h3>
+                    <p>An iconic tracksuit in vibrant colors is just the right gift.
+                    </p>
+                </div>
+                <span class=" p-2 fw-bold"><a class="text-black" href="">LEARN MORE</a></span>
+            </div>
+        </div>    
+    </div>
+    <!-- End boost -->
+    <!-- start popular -->
+    <div class="popular mt-5 d-lg-block">
+        <h2 class="text-center">POPULAR RIGHT NOW</h2>
+        <ul class="links d-flex list-unstyled justify-content-center align-items-center">
+            <li class="px-2 mx-1 py-2 d-flex align-items-center">ULTRABOOST</li>
+            <li class="px-2 mx-1 py-2">NMD</li>
+            <li class="px-2 mx-1 py-2">BACKPACKS</li>
+            <li class="px-2 mx-1 py-2">CLEATS</li>
+            <li class="px-2 mx-1 py-2">STAN SMITH</li>
+
+        </ul>
+    </div>
+    <!-- End popular -->
+    <!-- start stories -->
+    <div class="stories row m-0">
+        <div class="story-cont col-md-12 col-lg-6 p-5">
+            <h3>Stories, style, and sporting goods at adidas, since 1949</h3>
+            <p>Through sports, we have the power to change lives. Sports keep us fit. They keep us mindful. They bring us together. Athletes inspire us. They help us to get up and get moving. And sporting goods featuring the latest technologies help us beat our personal best. adidas is home to the runner, the basketball player, the soccer kid, the fitness enthusiast, the yogi. And even the weekend hiker looking to escape the city. The 3-Stripes are everywhere and anywhere. In sports. In music. On life’s stages. Before the whistle blows, during the race, and at the finish line. We’re here to support creators. To improve their game. To live their lives. And to change the world.</p>
+            <p>adidas is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sporting goods, style and clothing that match the athletic needs, while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
+        </div>
+        <div class="story-cont col-md-12 col-lg-6 p-5">
+            <h3>Workout clothes, for any sport</h3>
+            <p>adidas designs for athletes of all kinds. Creators who love to change the game. People who challenge conventions, break the rules, and define new ones. Then break them all over again. We design sports apparel that gets you moving, winning, and living life to the fullest. We create bras and tights for female athletes who play just as hard as the men. From low to high support. Maximum comfort. We design, innovate and iterate. We test new technologies in action. On the field, the track, the court, and in the pool. We’re inspired by retro workout clothes, creating new streetwear essentials. From NMD and Ozweego to our Firebird tracksuits. From Stan Smith to Superstar. Classic sports models are brought back to life on the streets and the stages around the world.</p>
+            <p>Through our collections we blur the borders between high fashion and high performance. Like our adidas by Stella McCartney athletic clothing collection – designed to look the part inside and outside of the gym. Or some of our adidas Originals lifestyle pieces, that can be worn as sports apparel too. Our lives are constantly changing. Becoming more and more versatile. And adidas designs with that in mind.</p>
+        </div>
+        
+    </div>
+    <!-- End stories -->
+        <!-- start login -->
+        <div class="log bg-dark row m-0 d-lg-none">
+            <span class="text-light col-6 text-center p-3 fw-bold">LOG IN</span>
+            <span class="text-light col-6 text-center p-3 fw-bold">YOUR BAG [0]</span>
+        </div>
+        <!-- End login -->
+    <!-- start offer -->
+    <div class="offer px-5 py-5">
+       <div class="cont mx-4  d-flex justify-content-around align-items-center flex-lg-row flex-md-column">
+        <h2 class=" m-0 fw-bold text-center">JOIN OUR ADICLUB & GET 15% OFF</h2>
+        <span class="text-light bg-dark p-3 cursor-pointe position-relative text"><a class="text-light fw-bold text-decoration-none me-3 text-center" href="">SIGN UP FOR FREE</a><i class="fa-solid fa-arrow-right-long "></i></span>
+       </div>
+    </div>
+    <!-- End offer -->
+
+    <!-- start footer -->
+    <div class="footer">
+        <div class="links row pt-4 m-0 p-5 d-lg-flex">
+            <ul  class="col-2 list-unstyled">
+                    <li class="fw-bold fs-5 mb-3">PRODUCTS</li>
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Accessories</li>
+                    <li>New Arrivals</li>
+                    <li>Best Sellers</li>
+                    <li>Release Dates</li>
+                    <li>Black Friday Deals</li>
+                    <li>Sale</li>
+            </ul>
+            <ul class=" col-2 list-unstyled">
+                <li class="fw-bold fs-5 mb-3">SPORTS</li>
+                <li>Soccer</li>
+                <li>Running</li>
+                <li>Basketball</li>
+                <li>Football</li>
+                <li>Outdoor</li>
+                <li>Golf</li>
+                <li>Tennis</li>
+                <li>Skateboarding</li>
+                <li>Training</li>
+
+            </ul>
+            <ul  class=" col-2 list-unstyled">
+                <li class="fw-bold fs-5 mb-3">COLLECTIONS</li>
+                <li>adicolor</li>
+                <li>Ultraboost</li>
+                <li>NMD</li>
+                <li>Forum</li>
+                <li>Superstar</li>
+                <li>Running Shoes</li>
+                <li>adilette</li>
+                <li>Stan Smith</li>
+                <li>adizero</li>
+                <li>Tiro</li>
+                <li>EQT</li>
+            </ul>  
+            <ul class=" col-2 list-unstyled">
+                <li class="fw-bold fs-5 mb-3">SUPPORT</li>
+                <li>adicolor</li>
+                <li>Ultraboost</li>
+                <li>NMD</li>
+                <li>Forum</li>
+                <li>Superstar</li>
+                <li>Running Shoes</li>
+                <li>adilette</li>
+                <li>Stan Smith</li>
+                <li>adizero</li>
+                <li>Tiro</li>
+                <li>EQT</li>
+            </ul>
+            <ul class=" col-2 list-unstyled">
+                <li class="fw-bold fs-5 mb-3">COMPANY INFO</li>
+                <li>About Us</li>
+                <li>Student Discount</li>
+                <li>Military & Healthcare</li>
+                <li>Discount</li>
+                <li>adidas Stories</li>
+                <li>adidas Apps</li>
+                <li>Sustainability</li>
+                <li>adiClub</li>
+                <li>Affiliates</li>
+                <li>Press</li>
+                <li>Careers</li>
+                <li>California Transparency</li>
+                <li>in Supply Chains Act</li>
+                <li>Responsible Disclosure</li>
+                <li>Transparency in</li>
+                <li>Coverage</li>
+                <li>Location Selector</li> 
+            </ul>
+            <ul class=" col-2 list-unstyled">
+                <li class="fw-bold fs-5 mb-3">FOLLOW US</li>
+                <li class=" fs-3 mb-2" ><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands  mb-2 fs-3 fa-instagram"></i></li>
+                <li><i class="fa-brands   mb-2 fs-3 fa-twitter"></i></li>
+                <li><i class="fa-brands  mb-2  fs-3 fa-pinterest"></i></li>
+                <li><i class="fa-brands  mb-2 fs-3 fa-tiktok"></i></li>
+                <li><i class="fa-brands  mb-2 fs-3 fa-youtube"></i></li>
+            </ul>     
+        </div>
+    </div>
+    <div class="linksMid bg-dark row m-0 pt-2 d-lg-none">
+        <ul class="list-unstyled text-light text-center col-6">
+            <li class="p-2">Help</li>
+            <li class="p-2">Returns & Exchanges</li>
+            <li class="p-2">Order Tracker</li>
+            <li class="p-2">Shipping</li>
+            <li class="p-2">Promotions</li>
+            <li class="p-2">Black Friday Deals</li>
+        </ul>
+        <ul class="list-unstyled text-light text-center col-6">
+            <li class="p-2">adiClub</li>
+            <li class="p-2">Store Finder</li>
+            <li class="p-2">Gift Cards</li>
+            <li class="p-2">adidas Apps</li>
+            <li class="p-2">Size Charts</li>
+            <li class="p-2">Location Selector</li>
+        </ul>   
+    </div>
+    <div class="end">
+        <div class="cont">
+            <ul class="list-unstyled row justify-content-center pt-3 flex-wrap m-0">
+                <li class="px-3 col-sm-6 col-lg-2 my-3 text-center">Data settings</li>
+                <li class="px-3 col-sm-6  col-lg-2 my-3 text-center">Do not sell my personal information</li>
+                <li class="px-3  col-sm-6  col-lg-2 my-3 text-center">Privacy Policy</li>
+                <li class="px-3 col-sm-6   col-lg-2 my-3 text-center">Terms and Conditions</li>
+            </ul>
+            <p class="mb-0 p-4">&copy 2022 adidas America, Inc.</p>
+        </div>
+    </div>
+    <!-- End footer -->
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
